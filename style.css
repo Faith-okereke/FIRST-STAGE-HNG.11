@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+}
+#mainPage {
+  opacity: 0.1;
+  transition: 0.5s ease-in-out all;
+}
+#modal {
+  width: 60%;
+  height: 56vh;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 10px;
+  position: fixed;
+  top: 20%;
+  z-index: 1;
+  left: 20%;
+  display: block;
+  text-align: center;
+  box-shadow: 3px 5px 36px -4px rgba(182, 36, 107, 0.75);
+  -webkit-box-shadow: 3px 5px 36px -4px rgba(182, 36, 107, 0.75);
+  -moz-box-shadow: 3px 5px 36px -4px rgba(182, 36, 107, 0.75);
+  padding: 10px;
+}
+#modal img {
+  width: 100px;
+  height: 100px;
+}
+#modal .close {
+  font-size: 60px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #b6246b;
+}
+#modal .modalParagraph {
+  /* width: 50%; */
+  padding: 30px 20px;
+  font-size: 35px;
+  background-color: #b6246b;
+  color: #fff;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+h1 {
+  text-align: center;
+  background-color: #b6246b;
+  padding: 20px;
+  color: #fff;
+}
+h5 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.personalDetails p {
+  font-size: 18px;
+}
+.personalDetails div,
+.dateTime div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.personalDetails div img,
+.dateTime div img {
+  width: 20px;
+  cursor: pointer;
+}
+section {
+  padding: 15px;
+}
+section h3 {
+  padding-bottom: 10px;
+}
+section p {
+  font-size: 18px;
+}
+main {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  /* gap: 4rem; */
+  align-items: center;
+  height: inherit;
+}
+main .mainQuote {
+  width: 100%;
+  height: 41rem;
+  background-color: #efefef;
+  padding: 80px;
+}
+.Quote {
+  font-size: 70px;
+  font-family: fantasy;
+  padding-top: 20px;
+}
+
+.mainQuote .authorQuote {
+  text-align: right;
+  font-family: cursive;
+}
+.mainQuote .authorQuote a {
+  color: #b6246b;
+}
+.personalDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #b6246b;
+  margin-inline: 15px;
+}
+.personalDate div {
+  padding: 7px;
+}
+.goals {
+  padding: 15px;
+}
+.goals p {
+  font-size: 18px;
+}
+.goals ul {
+  padding-top: 15px;
+
+}
+.goals ul div li {
+  list-style-type: none;
+  font-size: 20px;
+}
+.goals ul div {
+  padding: 60px 40px;
+  background-color: #b6246b;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  main .mainQuote {
+    padding: 100px 10px;
+  }
+  .Quote {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  #modal{
+    height: 32vh;
+  }
+  #modal .modalParagraph {
+    font-size: 18px;
+  }
+  .Quote .authorQuote{
+    font-size: 15px;
+  }
+}
