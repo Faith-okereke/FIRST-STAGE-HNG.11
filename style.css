@@ -3,59 +3,17 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 body {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
   display: grid;
   place-items: center;
   min-width: 100vw;
+  overflow-x: hidden;
 }
-a{
-    color:#b6246b;
-}
-#mainPage {
-  opacity: 0.1;
-  transition: 0.5s ease-in-out all;
-}
-#modal {
-  width: 60%;
-  height: 56%;
-  background-color: #fff;
-  color: #000000;
-  border-radius: 10px;
-  position: fixed;
-  top: 20%;
-  z-index: 1;
-  left: 20%;
-  display: block;
-  text-align: center;
-  box-shadow: 3px 5px 36px -4px rgba(182, 36, 107, 0.75);
-  -webkit-box-shadow: 3px 5px 36px -4px rgba(182, 36, 107, 0.75);
-  -moz-box-shadow: 3px 5px 36px -4px rgba(182, 36, 107, 0.75);
-  padding: 10px;
-}
-#modal img {
-  width: 100px;
-  height: 100px;
-}
-#modal .close {
-  font-size: 60px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
+a {
   color: #b6246b;
-}
-#modal .modalParagraph {
-  /* width: 50%; */
-  padding: 30px 20px;
-  font-size: 35px;
-  background-color: #b6246b;
-  color: #fff;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
 }
 h1 {
   text-align: center;
@@ -162,26 +120,20 @@ main .mainQuote {
     padding-top: 10px;
     font-size: 20px;
   }
-  #modal{
-    height: 30%;
-  }
-  #modal .modalParagraph {
-    font-size: 18px;
-  }
-  .Quote .authorQuote{
+  .Quote .authorQuote {
     font-size: 15px;
   }
-  main{
+  main {
     flex-direction: column;
   }
-  main .mainQuote{
+  main .mainQuote {
     padding: 10px;
-    height:max-content;
+    height: max-content;
   }
-  .goals ul div{
+  .goals ul div {
     padding: 20px 20px;
   }
-  .goals ul div li{
-    font-size:17px;
+  .goals ul div li {
+    font-size: 17px;
   }
 }

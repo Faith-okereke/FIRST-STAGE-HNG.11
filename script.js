@@ -17,19 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const newDay = document.querySelector("p[data-testid='currentDay']");
 
     //Format Hours and Minutes to always have two digits
-    currentHour = currentHour < 10 ? "0" + currentHour : currentHour;
+    currentMinute = currentHour < 10 ? "0" + currentHour : currentHour;
     currentMinute = currentMinute < 10 ? "0" + currentMinute : currentMinute;
 
+    //Set Time to PM or AM
+     currentMinute= currentHour > 12? currentMinute +"PM" :currentMinute +"AM"
     //set the current time and day
     newHour.innerHTML = "Time: " + currentHour + ":" + currentMinute;
-    newDay.innerHTML = "Day: " + days[d.getDay()];
-
-    //function to close the modal
-    window.CloseModal = function () {
-        let openModal = document.getElementById("modal")
-        openModal.style.display = "none"
-        //    openModal?document.body.style.display="block" : document.body.style.display="none"
-        let mainPage = document.getElementById("mainPage")
-        mainPage.style.opacity = 1
-    }
+    newDay.innerHTML = "Day: " + days[currentDay];
 })
