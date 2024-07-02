@@ -3,10 +3,17 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
+  display: grid;
+  place-items: center;
+  min-width: 100vw;
+}
+a{
+    color:#b6246b;
 }
 #mainPage {
   opacity: 0.1;
@@ -14,7 +21,7 @@ body {
 }
 #modal {
   width: 60%;
-  height: 56vh;
+  height: 56%;
   background-color: #fff;
   color: #000000;
   border-radius: 10px;
@@ -87,7 +94,7 @@ section p {
   font-size: 18px;
 }
 main {
-  margin: 15px;
+  /* margin: 15px; */
   display: flex;
   justify-content: center;
   /* gap: 4rem; */
@@ -131,7 +138,6 @@ main .mainQuote {
 }
 .goals ul {
   padding-top: 15px;
-
 }
 .goals ul div li {
   list-style-type: none;
@@ -157,12 +163,25 @@ main .mainQuote {
     font-size: 20px;
   }
   #modal{
-    height: 32vh;
+    height: 30%;
   }
   #modal .modalParagraph {
     font-size: 18px;
   }
   .Quote .authorQuote{
     font-size: 15px;
+  }
+  main{
+    flex-direction: column;
+  }
+  main .mainQuote{
+    padding: 10px;
+    height:max-content;
+  }
+  .goals ul div{
+    padding: 20px 20px;
+  }
+  .goals ul div li{
+    font-size:17px;
   }
 }
