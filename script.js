@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Format Hours and Minutes to always have two digits
     currentMinute = currentHour < 10 ? "0" + currentHour : currentHour;
-    currentMinute = currentMinute < 10 ? "0" + currentMinute : currentMinute;
 
     //Set Time to PM or AM
      currentMinute= currentHour > 12? currentMinute +"PM" :currentMinute +"AM"
